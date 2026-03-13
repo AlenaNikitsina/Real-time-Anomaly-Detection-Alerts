@@ -1,5 +1,3 @@
-#chat_id=-969316925 Чат алертов
-#chat_id=667311876 мой бот 
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -29,7 +27,7 @@ connection = {
     'host': 'http://clickhouse.lab.karpov.courses:8123',
     'database':'simulator_20251220',
     'user':'student',
-    'password':'dpo_python_2020'
+    'password':'...'
 }
             
  #извлекаем данные из таблицы за вчера и сегодня с 15минутным интервалом: активные пользователи в ленте / мессенджере, просмотры, лайки, CTR, количество отправленных сообщений. 
@@ -97,8 +95,8 @@ def prihodko_alerts():
     
     @task()
     def run_alerts(data,chat_id=None): #система алертов
-        chat_id = -969316925
-        bot = telegram.Bot(token='8578418775:AAGlYAPptknOP-wdOW5v8gBhlDcavt0HCwE')
+        chat_id = ....
+        bot = telegram.Bot(token='.....')
 
         metrics_list=['users_feed','views','likes','ctr','users_message', 'count_message']
         
